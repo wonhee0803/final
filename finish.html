@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+ <style>
+     .product {
+         border: 2px solid black;
+         margin: 10px;
+         padding: 30px;
+     }
+      h1 {
+            color: forestgreen;
+            text-align: center;
+      }
+
+      input[type=submit], [type=button] {
+            padding: 16px 16px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+            float: right;
+      }
+
+      b {
+            text-align: center;
+      }
+ </style>
+</head>
+
+<body>
+
+<h1>Sungho's Shop</h1>
+<b>구매정보</b>
+
+<form action="product.html" target="_self" method="POST">
+    <div class="product">
+        <table>
+            <p>이름 <span id = "result"></span></p>
+            <p>학번</p>
+            <p><nav> Github 주소 <a href="https://www.github.com/wonhee0803">https://github.com</a></nav></p>
+            <p>총액</p>
+            <p>구매방법</p>
+        </table>
+    </div>
+    <input type='submit' class='btn' name='btn' value='확인'>
+    <input type="button" class='btn' name='btn' value="이전" onClick="history.back()">
+</form>
+
+</body>
+</html>
